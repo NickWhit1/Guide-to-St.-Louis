@@ -1,0 +1,77 @@
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: rgb(126, 30, 30);
+  /* max-width: fit-content; */
+  border: 5px solid rgb(72, 57, 57);
+  padding: 40px;
+  margin: 10px;
+
+
+}
+#nav-bar {
+  border: 4px solid rgb(72, 57, 57);
+  padding: 5px;
+  margin: 5px;
+  text-align: center;
+  background-color: black;
+
+}
+
+img {
+  border-radius: 8em;
+  display: block;
+  margin: auto; /* Will move image on page */
+  width: 30%;
+  /* padding: 40px 0px; */
+  border: 10px solid #070707;
+
+
+}
+h1, h2, h3 {
+  text-align: center;
+  color: whitesmoke;
+  margin: 15px;
+  padding: 20px;
+  font-style: italic;
+}
+
+/* .foot {
+  color: whitesmoke);
+  font-weight: 600;
+} */
+
+ul {
+  color: whitesmoke;
+  list-style-type: none;
+  text-align: center;
+  justify-content: center;
+  padding: 2px;
+}
+.top {
+  display: flex;
+  justify-content: center;
+}
+.search {
+  display: flex;
+  justify-content: end;
+  /* border-radius: 15px; */
+}
+.search-bar {
+  border-radius: 5px;
+}
+.sides {
+  display: flex;
+  padding: 10px;
+
+}
+.food {
+
+}
+@media (max-width: 360px) { /*may need to be min-width */
+
+}
+
+
+
+
+
