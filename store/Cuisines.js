@@ -1,4 +1,4 @@
 export default {
-  header: "My Cuisines Page",
+  header: "Cuisines",
   view: "Cuisines"
 };
