@@ -1,4 +1,5 @@
 export default {
   header: "Welcome to St. Louis",
-  view: "Home"
+  view: "Home",
+  weather: {}
 };

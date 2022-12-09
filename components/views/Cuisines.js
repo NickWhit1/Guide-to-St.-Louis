@@ -5,7 +5,7 @@ import steak from "../../image/bbq.jpg";
 
 export default () => html`
   <section id="cuisines">
-    <h2>Cuisines</h2>
+    <h3 class="foodSections">Pizza</h3>
     <!-- <ul>
       <li></li>
       <li></li>
@@ -14,8 +14,10 @@ export default () => html`
     </ul> -->
     <div class="food">
       <img src="${pizza}" alt="pizza" />
-      <img src="${italian}" alt="Italian" />
-      <img src="${steak}" alt="steak" />
+      <h3>Italian</h3>
+      <img class="italian" src="${italian}" alt="Italian" />
+      <h3>BBQ</h3>
+      <img class="barb" src="${steak}" alt="steak" />
     </div>
   </section>
 `;
