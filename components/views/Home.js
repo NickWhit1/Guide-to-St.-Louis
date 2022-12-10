@@ -1,6 +1,5 @@
 import html from "html-literal";
 import stlArch from "../../image/arch.jpg";
-import horses from "../../image/clydesdales.jpg";
 
 export default state => html`
   <header>
@@ -18,7 +17,6 @@ export default state => html`
     </p>
     <div class="homePics">
       <img src="${stlArch}" alt="St. Louis Arch" />
-      <img src="${horses}" alt="Clydesdales" />
     </div>
   </header>
   <h3>
