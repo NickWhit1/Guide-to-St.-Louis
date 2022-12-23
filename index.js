@@ -17,6 +17,7 @@ function render(state = store.Home) {
   ${Footer()}
     `;
   afterRender();
+
   router.updatePageLinks();
 }
 function afterRender() {
@@ -36,37 +37,25 @@ router.hooks({
         axios
           .get(
             // Replace the key provided here with your own key from openweathermap
-            `https://api.openweathermap.org/data/2.5/weather?q=st%20louis&appid=${process.env.OPEN_WEATHER_MAP_API_KEY}`
+            `https://api.openweathermap.org/data/2.5/weather?q=st%20louis&appid=${process.env.OPEN_WEATHER_MAP_API_KEY}&units=imperial`
           )
           .then(response => {
-            const kelvinToFahrenheit = kelvinTemp =>
-              Math.round((kelvinTemp - 273.15) * (9 / 5) + 32);
+            // const kelvinToFahrenheit = kelvinTemp =>
+            //   Math.round((kelvinTemp - 273.15) * (9 / 5) + 32);
             store.Home.weather = {};
             store.Home.weather.city = response.data.name;
-            store.Home.weather.temp = kelvinToFahrenheit(
-              response.data.main.temp
-            );
-            store.Home.weather.feelsLike = kelvinToFahrenheit(
+            store.Home.weather.temp = Math.round(response.data.main.temp);
+            store.Home.weather.feelsLike = Math.round(
               response.data.main.feels_like
             );
+            // store.Home.weather.feelsLike = response.data.main.temp_min;
             store.Home.weather.description = response.data.weather[0].main;
+            // store.Home.weather.cnt[2] = response.data.weather[0].main;
+
             done();
           })
           .catch(err => console.log(err));
         break;
-      // case "Pizza":
-      //   axios
-      //     .get(`${process.env.PIZZA_PLACE_API_URL}/pizzas`)
-      //     .then(response => {
-      //       store.Pizza.pizzas = response.data;
-      //       console.log(response.data);
-      //       done();
-      //     })
-      //     .catch(error => {
-      //       console.log("It puked", error);
-      //       done();
-      //     });
-      //   break;
       default:
         done();
     }

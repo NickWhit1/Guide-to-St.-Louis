@@ -8,20 +8,25 @@ export default state => html`
       <input type="search" id="site-search" class="search-bar" />
     </div>
     <p class="aboutStl">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, alias
-      praesentium! In tempore tempora eius velit quis iure. Provident, ad!
-      Aspernatur expedita aperiam nam repudiandae sed rerum culpa harum error
-      corrupti dolorem et pariatur atque ipsum laboriosam, aliquid nesciunt
-      repellat maiores magnam amet iste iusto minus quidem officiis unde.
-      Doloremque!
+      St. Louis is a major city in Missouri along the Mississippi River. Its
+      iconic, 630-ft. Gateway Arch, built in the 1960s, honors the early
+      19th-century explorations of Lewis and Clark and America's westward
+      expansion in general. Replica paddlewheelers ply the river, offering views
+      of the arch. The Soulard district is home to barbecue restaurants and
+      clubs playing blues music.
     </p>
     <div class="homePics">
       <img src="${stlArch}" alt="St. Louis Arch" />
     </div>
   </header>
   <h3>
-    The weather in ${state.weather.city} is ${state.weather.description}.
-    Temperature is ${state.weather.temp}F, and it feels like
-    ${state.weather.feelsLike}F.
+    <ul>
+      <li>
+        The weather in ${state.weather.city} is ${state.weather.description}.
+      </li>
+      <li>Temperature is ${state.weather.temp}F.</li>
+      <li>Real Feel ${state.weather.feelsLike}F.</li>
+      <!-- <li>Low temp of ${state.weather.temp_min}.</li> -->
+    </ul>
   </h3>
 `;
