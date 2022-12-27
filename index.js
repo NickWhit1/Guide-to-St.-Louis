@@ -48,7 +48,7 @@ router.hooks({
             store.Home.weather.feelsLike = Math.round(
               response.data.main.feels_like
             );
-            // store.Home.weather.feelsLike = response.data.main.temp_min;
+
             store.Home.weather.description = response.data.weather[0].main;
             // store.Home.weather.cnt[2] = response.data.weather[0].main;
 
