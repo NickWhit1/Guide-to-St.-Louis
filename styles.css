@@ -123,6 +123,13 @@ ul {
 .foodSections {
   margin: 6rem 6rem;
 }
+
+.window {
+  background-color: rgb(19, 18, 17);
+  /* display: inline; */
+
+
+}
 @media screen and (min-width: 359px) { /*may need to be min-width */
   body {
     display: inline-block;
