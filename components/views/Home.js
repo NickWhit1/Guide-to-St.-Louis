@@ -20,13 +20,38 @@ export default state => html`
     </div>
   </header>
   <h3>
-    <ul>
-      <li>
-        The weather in ${state.weather.city} is ${state.data.description}.
-      </li>
-      <li>Temperature is ${state.weather.temp}F.</li>
-      <li>Real Feel ${state.weather.feels_like}F.</li>
-      <li>Low temp of ${state.weather.temp_min}F.</li>
-    </ul>
+    <div class="window">
+      <ul>
+        <li>${state.weather.icon}</li>
+        <li>
+          The weather in ${state.weather.city.name} is
+          ${state.weather.description}.
+        </li>
+        <li>Temperature is ${state.weather.temp}F.</li>
+        <li>Real Feel ${state.weather.feels_like}F.</li>
+        <li>Low temp of ${state.weather.temp_min}F.</li>
+      </ul>
+    </div>
+    <div class="window">
+      <ul>
+        <li>
+          The weather in ${state.weather.city.name} is
+          ${state.weather.description}.
+        </li>
+        <li>Temperature is ${state.weather.temp}F.</li>
+        <li>Real Feel ${state.weather.feels_like}F.</li>
+        <li>Low temp of ${state.weather.temp_min}F.</li>
+      </ul>
+    </div>
+    <div class="window">
+      <ul>
+        <li>
+          Skies are ${state.weather.city.name} is ${state.weather.description}.
+        </li>
+        <li>Temperature is ${state.weather.temp}F.</li>
+        <li>Real Feel ${state.weather.feels_like}F.</li>
+        <li>Low temp of ${state.weather.temp_min}F.</li>
+      </ul>
+    </div>
   </h3>
 `;

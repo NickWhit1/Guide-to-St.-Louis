@@ -44,16 +44,19 @@ router.hooks({
             // const kelvinToFahrenheit = kelvinTemp =>
             //   Math.round((kelvinTemp - 273.15) * (9 / 5) + 32);
             store.Home.weather = {};
-            store.Home.weather.city =
-              response.data.city.list[0].weather[0].description;
+            store.Home.weather.city = response.data.city;
             store.Home.weather.temp = Math.round(
               response.data.list[0].main.temp
             );
-            store.Home.weather.feelsLike = Math.round(
+            store.Home.weather.feels_like = Math.round(
               response.data.list[0].main.feels_like
             );
-            store.Home.weather.temp_min = response.data.list[0].main.temp_min;
-            // store.Home.weather.description = response.data.list[0].forecast[0].main;
+            store.Home.weather.temp_min = Math.round(
+              response.data.list[0].main.temp_min
+            );
+            store.Home.weather.description =
+              response.data.list[0].weather[0].main;
+            store.Home.weather.icon = response.data.list[0].weather[0].icon;
             // store.Home.weather.cnt[2] = response.data.weather[0].main;
 
             done();
