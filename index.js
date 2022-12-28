@@ -37,19 +37,23 @@ router.hooks({
         axios
           .get(
             // Replace the key provided here with your own key from openweathermap
-            `https://api.openweathermap.org/data/2.5/weather?q=st%20louis&appid=${process.env.OPEN_WEATHER_MAP_API_KEY}&units=imperial`
+            `https://api.openweathermap.org/data/2.5/forecast?q=st%20louis&appid=${process.env.OPEN_WEATHER_MAP_API_KEY}&units=imperial`
           )
           .then(response => {
+            console.log(response);
             // const kelvinToFahrenheit = kelvinTemp =>
             //   Math.round((kelvinTemp - 273.15) * (9 / 5) + 32);
             store.Home.weather = {};
-            store.Home.weather.city = response.data.name;
-            store.Home.weather.temp = Math.round(response.data.main.temp);
-            store.Home.weather.feelsLike = Math.round(
-              response.data.main.feels_like
+            store.Home.weather.city =
+              response.data.city.list[0].weather[0].description;
+            store.Home.weather.temp = Math.round(
+              response.data.list[0].main.temp
             );
-
-            store.Home.weather.description = response.data.weather[0].main;
+            store.Home.weather.feelsLike = Math.round(
+              response.data.list[0].main.feels_like
+            );
+            store.Home.weather.temp_min = response.data.list[0].main.temp_min;
+            // store.Home.weather.description = response.data.list[0].forecast[0].main;
             // store.Home.weather.cnt[2] = response.data.weather[0].main;
 
             done();
