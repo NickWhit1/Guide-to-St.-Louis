@@ -22,11 +22,11 @@ export default state => html`
   <h3>
     <ul>
       <li>
-        The weather in ${state.weather.city} is ${state.weather.description}.
+        The weather in ${state.weather.city} is ${state.data.description}.
       </li>
       <li>Temperature is ${state.weather.temp}F.</li>
-      <li>Real Feel ${state.weather.feelsLike}F.</li>
-      <!-- <li>Low temp of ${state.weather.temp_min}.</li> -->
+      <li>Real Feel ${state.weather.feels_like}F.</li>
+      <li>Low temp of ${state.weather.temp_min}F.</li>
     </ul>
   </h3>
 `;
