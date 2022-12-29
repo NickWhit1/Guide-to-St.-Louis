@@ -63,6 +63,19 @@ router.hooks({
           })
           .catch(err => console.log(err));
         break;
+      // case "Contact":
+      //   axios
+      //     .get(`${process.env.PIZZA_PLACE_API_URL}/contact`)
+      //     .then(response => {
+      //       store.Contact.contact = response.data;
+      //       console.log(response.data);
+      //       done();
+      //     })
+      //     .catch(error => {
+      //       console.log("It puked", error);
+      //       done();
+      //     });
+      //   break;
       default:
         done();
     }

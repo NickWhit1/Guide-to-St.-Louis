@@ -1,9 +1,24 @@
 const mongoose = require("mongoose");
+const { Contact } = require("../../store");
 
-const weatherSchema = new mongoose.Schema({
-  // Create Schema here
+const contactSchema = new mongoose.Schema({
+  name: {
+    type: String,
+    required: true,
+    enum: []
+  },
+  email: {
+    type: String,
+    required: true,
+    enum: []
+  },
+  message: {
+    type: String,
+    required: true,
+    enum: []
+  }
 });
 
-const Weather = mongoose.model("Weather", weatherSchema);
+const Contact = mongoose.model("Contact", contactSchema);
 
-module.exports = Weather;
+module.exports = Contact;
