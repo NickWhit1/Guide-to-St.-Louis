@@ -5,7 +5,6 @@ import zooImage from "../../image/penquins.jpg";
 
 export default () => html`
   <main id="attractions">
-    <!-- <h2>Attractions</h2> -->
     <h2>Busch Stadium</h2>
     <p>
       Busch Stadium is a baseball stadium located in St. Louis, Missouri. The
