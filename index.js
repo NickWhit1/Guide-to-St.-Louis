@@ -101,7 +101,7 @@ router.hooks({
 
       case "Contact":
         axios
-          .get("https://nickklauscapstone.onrender.com/Contact")
+          .get(`${process.env.CONTACT}`)
           .then(response => {
             store.Contact.contact = response.data;
             console.log(response.data);
@@ -111,7 +111,8 @@ router.hooks({
             console.log("It puked", error);
             done();
           });
-        // axios.post("https://nickklauscapstone.onrender.com/Contact", requestData)
+        axios.post(`${process.env.CONTACT}`);
+
         break;
       default:
         done();
