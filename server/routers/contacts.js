@@ -11,7 +11,7 @@ router.post("/", (request, response) => {
   });
 });
 router.get("/", (request, response) => {
-  Pizza.find({}, (error, record) => {
+  Contact.find({}, (error, record) => {
     if (error) return response.status(500).json(error);
     return response.json(record);
   });
