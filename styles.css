@@ -6,6 +6,7 @@ body {
   padding: 40rem;
   margin: 10rem;
   display: flex;
+  min-width: 90vw;
 }
 
 header {
@@ -130,11 +131,16 @@ ul {
 }
 
 .contact {
+  display: inline-block;
   padding: 2.5rem;
+
 
 }
 .info {
   color: whitesmoke;
+  display: inline;
+  padding: 2.5rem;
+
 }
 
 @media screen and (min-width: 359px) { /*may need to be min-width */

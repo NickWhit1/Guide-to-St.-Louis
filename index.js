@@ -16,15 +16,50 @@ function render(state = store.Home) {
   ${Main(state)}
   ${Footer()}
     `;
-  afterRender();
+  afterRender(state);
 
   router.updatePageLinks();
 }
-function afterRender() {
+function afterRender(state) {
   // add menu toggle to bars icon in nav bar
   // document.querySelector(".fa-bars").addEventListener("click", () => {
   //   document.querySelector("nav > ul").classList.toggle("hidden--mobile");
   // });
+
+  if (state.view === "Send") {
+    document.querySelector("form").addEventListener("send", event => {
+      event.preventDefault();
+
+      const inputList = event.target.elements;
+      console.log("Input Element List", inputList);
+
+      const message = [];
+      // Interate over the toppings input group elements
+      for (let input of inputList.message) {
+        // If the value of the checked attribute is true then add the value to the toppings array
+        if (input.checked) {
+          message.push(input.value);
+        }
+      }
+
+      const requestData = {
+        email: inputList.email.value,
+        message: inputList.message.value
+      };
+      console.log("request Body", requestData);
+
+      axios
+        .post(`${process.env.PIZZA_PLACE_API_URL}/contacts`, requestData)
+        .then(response => {
+          // Push the new pizza onto the Pizza state pizzas attribute, so it can be displayed in the pizza list
+          store.Contact.pizzas.push(response.data);
+          router.navigate("/Pizza");
+        })
+        .catch(error => {
+          console.log("It puked", error);
+        });
+    });
+  }
 }
 router.hooks({
   before: (done, params) => {
