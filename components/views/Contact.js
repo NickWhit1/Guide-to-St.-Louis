@@ -17,8 +17,6 @@ export default () => html`
       </label class="info" >
       <button type="submit">Send</button>
       <!-- your other form fields go here -->
-
-
     </form>
   </section>
 `;

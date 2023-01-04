@@ -49,11 +49,11 @@ function afterRender(state) {
       console.log("request Body", requestData);
 
       axios
-        .post(`${process.env.PIZZA_PLACE_API_URL}/contacts`, requestData)
+        .post(`${process.env.CONTACT}/contacts`, requestData)
         .then(response => {
           // Push the new pizza onto the Pizza state pizzas attribute, so it can be displayed in the pizza list
-          store.Contact.pizzas.push(response.data);
-          router.navigate("/Pizza");
+          store.Contact.push(response.data);
+          router.navigate("/Contact");
         })
         .catch(error => {
           console.log("It puked", error);
@@ -108,11 +108,10 @@ router.hooks({
             done();
           })
           .catch(error => {
-            console.log("It puked", error);
+            console.log("No Bueno", error);
             done();
           });
         axios.post(`${process.env.CONTACT}`);
-
         break;
       default:
         done();

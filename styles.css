@@ -43,13 +43,23 @@ img {
     display: block; */
 
 }
-h1, h2, h3, p {
+h1, h2, h3 {
   text-align: center;
-  color: whitesmoke;
+  color: rgb(255, 255, 255);
   margin: 5rem;
   padding: 20px;
-  font-style: italic;
-  text-shadow: 3px 3px 3px rgb(40, 32, 63);
+  font-weight: 800;
+  font-size: large;
+  /* text-shadow: 3px 3px 3px rgb(40, 32, 63); */
+}
+
+p {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  margin: 5rem;
+  padding: 20px;
+  font-weight: 200;
+  font-size: large;
 }
 
 ul {
@@ -83,20 +93,27 @@ ul {
 
 }
 .italian {
-  /* padding: 1em; */
-  /* border: 2px solid rgb(72, 57, 57); */
+  border: 1rem 1rem 1rem;
+  width: 30rem;
+  height: 25rem;
   background-color: rgb(90, 82, 82);
 
 }
 .aboutStl {
   display: flex;
-  color: whitesmoke;
+  color: rgb(0, 0, 0);
   text-align: center;
-
-
+  font-weight: 900;
+  border-color: black;
+  text-shadow: -1px 0 rgb(255, 255, 255), 0 1px rgb(255, 255, 255), 1px 0 rgb(255, 255, 255), 0 -1px rgb(255, 255, 255);
 }
+.arch {
+  visibility: hidden;
+}
+
 .barb {
   margin-bottom: 7em;
+  width: 35rem;
 }
 .food {
   display: flex;
@@ -109,7 +126,8 @@ ul {
 
 }
 .cuisine-type {
-  margin: 4rem;
+  margin: 0.2rem;
+  padding-top: 10rem;
 }
 .address {
   color: black;
@@ -126,8 +144,11 @@ ul {
 .window {
   background-color: rgb(19, 18, 17);
   /* display: inline; */
+}
 
-
+.horses {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
 }
 
 .contact {
@@ -140,6 +161,28 @@ ul {
   color: whitesmoke;
   display: inline;
   padding: 2.5rem;
+}
+
+.pizzaPic {
+  width: 25rem;
+
+  margin-bottom: .5rem;
+}
+
+.foodPics {
+  margin: 1rem;
+}
+.imageBorder {
+  width: 35rem;
+  height: 35rem;
+}
+.homeBody {
+  background-image: url("./image/arch.jpg");
+  background-repeat: no-repeat;
+  display: inline-block;
+  background-size: cover;
+  background-position: center;
+  margin-top: 6rem;
 
 }
 
@@ -151,9 +194,9 @@ ul {
     text-align: center;
     padding: 20px;
   }
-  .homePics {
 
-  }
+
+
 
 
 
