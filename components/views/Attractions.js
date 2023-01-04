@@ -1,7 +1,7 @@
 import html from "html-literal";
 import buschStadiumImage from "../../image/buschStadium.jpg";
 import zooImage from "../../image/penquins.jpg";
-// import gardenImage from "../../image/botanicalGarden.jpg";
+import gardenImage from "../../image/botanicalGarden.jpg";
 
 export default () => html`
   <main id="attractions">
@@ -34,7 +34,7 @@ export default () => html`
       >700 Clark Ave, St. Louis, MO 63102</a
     >
     <hr />
-    <h2>Zoo</h2>
+    <h2>St. Louis Zoo</h2>
     <p>
       Since its inception in 1910, the Zoo has been renowned for its beautiful
       naturalistic exhibits and for its diverse collection of animals from the
@@ -45,14 +45,37 @@ export default () => html`
       widely recognized for its innovative approaches to animal care and
       management, wildlife conservation, research and education.
     </p>
+
+    <div>
+      <img class="penquins" src="${zooImage}" alt="Zoo" />
+    </div>
     <a
       class="address"
       href="https://www.mapquest.com/directions"
       target="_blank"
       >1 Government Dr, St. Louis, MO 63110</a
     >
+    <hr />
     <div>
-      <img class="penquins" src="${zooImage}" alt="Zoo" />
+      <h2>Botanical Gardens</h2>
+      <p>
+        The Garden is a center for botanical research and science education, as
+        well as an oasis in the city of St. Louis. The Garden offers 79 acres of
+        beautiful horticultural display, including a 14-acre Japanese strolling
+        garden, historic architecture, and one of the world's largest
+        collections of rare and endangered flora.
+      </p>
+      <img
+        class="imageBorder"
+        src="${gardenImage}"
+        alt="Picture of Busch Stadium"
+      />
+      <a
+        class="address"
+        href="https://www.mapquest.com/directions"
+        target="_blank"
+        >4344 Shaw Blvd, St. Louis, MO 63110</a
+      >
     </div>
   </main>
 `;
