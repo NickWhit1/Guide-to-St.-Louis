@@ -26,33 +26,31 @@ function afterRender(state) {
   //   document.querySelector("nav > ul").classList.toggle("hidden--mobile");
   // });
 
-  if (state.view === "Send") {
-    document.querySelector("form").addEventListener("send", event => {
+  if (state.view === "Contact") {
+    document.querySelector("form").addEventListener("submit", event => {
       event.preventDefault();
 
-      const inputList = event.target.elements;
-      console.log("Input Element List", inputList);
+      const Contact = event.target.elements;
+      console.log("Contact", Contact);
 
-      const message = [];
-      // Interate over the toppings input group elements
-      for (let input of inputList.message) {
-        // If the value of the checked attribute is true then add the value to the toppings array
-        if (input.checked) {
-          message.push(input.value);
-        }
-      }
+      // const message = {};
+      // for (let input of inputList.message) {
+      //   // If the value of the checked attribute is true then add the value to the array
+      //   if (input.checked) {
+      //     message.push(input.value);
+      //   }
+      // }
 
       const requestData = {
-        email: inputList.email.value,
-        message: inputList.message.value
+        email: Contact.email.value,
+        message: Contact.message.value
       };
       console.log("request Body", requestData);
 
       axios
-        .post(`${process.env.CONTACT}/contacts`, requestData)
+        .post(`${process.env.CONTACT}`, requestData)
         .then(response => {
-          // Push the new pizza onto the Pizza state pizzas attribute, so it can be displayed in the pizza list
-          store.Contact.push(response.data);
+          // store.Contact.push(requestData);
           router.navigate("/Contact");
         })
         .catch(error => {
@@ -111,7 +109,7 @@ router.hooks({
             console.log("No Bueno", error);
             done();
           });
-        axios.post(`${process.env.CONTACT}`);
+
         break;
       default:
         done();

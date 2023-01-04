@@ -1,10 +1,10 @@
 import html from "html-literal";
 
-export default () => html`
+export default state => html`
   <section id="contacts">
     <form
       class="contact"
-      action="https://formspree.io/f/mnqyakqq"
+      action=""
       method="POST"
     >
       <label class="info">
@@ -15,8 +15,8 @@ export default () => html`
         Your message:
         <textarea name="message" rows="6" maxlength="3000"></textarea>
       </label class="info" >
-      <button type="submit">Send</button>
-      <!-- your other form fields go here -->
-    </form>
+      <input type="submit" name="submit" value="submit"/>
+
+      </form>
   </section>
 `;
