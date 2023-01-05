@@ -1,6 +1,7 @@
 import html from "html-literal";
 import stlArch from "../../image/arch.jpg";
 import stlClydesdales from "../../image/clydesdale.jpg";
+import toastedRavs from "../../image/tRavs.jpg";
 
 export default state => html`
   <header class="homeBody" >
@@ -14,15 +15,16 @@ export default state => html`
       19th-century explorations of Lewis and Clark and America's westward
       expansion in general. Replica paddlewheelers ply the river, offering views
       of the arch. The Soulard district is home to barbecue restaurants and
-      clubs playing blues music. The town gained fame in 1803 as the jumping-off point for the Louisiana Purchase Expedition of Meriwether Lewis and William Clark. After 1804, more New Englanders and other East Coast emigrants settled in St. Louis, but the population remained predominantly French until well into the 19th-Century. St.
+      clubs playing blues music. The town gained fame in 1803 as the jumping-off point for the Louisiana Purchase Expedition of Meriwether Lewis and William Clark. After 1804, more New Englanders and other East Coast emigrants settled in St. Louis, but the population remained predominantly French until well into the 19th-Century.
     </p>
     <div class="homePics">
     <img class="arch" src="${stlArch}" alt="St. Louis Arch" />
     </div>
   </header>
   <body>
-  <div>
-    <img class="horses" src="${stlClydesdales}" alt="Pic of Clydesdale horses" />
+    <div class="homePictures">
+      <img class="ravs" src="${stlClydesdales}" alt="Pic of Clydesdale horses" />
+      <img class="ravs" src="${toastedRavs}" alt="pic of toasted ravioli" />
     </div>
     <div class="window">
       <ul>
