@@ -48,7 +48,7 @@ h1, h2, h3 {
   color: rgb(255, 255, 255);
   margin: 5rem;
   padding: 20px;
-  font-weight: 800;
+  font-weight: 900;
   font-size: large;
   /* text-shadow: 3px 3px 3px rgb(40, 32, 63); */
 }
@@ -56,9 +56,9 @@ h1, h2, h3 {
 p {
   text-align: center;
   color: rgb(255, 255, 255);
-  margin: 5rem;
+  margin: 3rem;
   padding: 20px;
-  font-weight: 200;
+  font-weight: 700;
   font-size: large;
 }
 
@@ -97,6 +97,7 @@ ul {
   width: 30rem;
   height: 25rem;
   background-color: rgb(90, 82, 82);
+  margin-bottom: 2rem;
 
 }
 .aboutStl {
@@ -104,6 +105,7 @@ ul {
   color: rgb(0, 0, 0);
   text-align: center;
   font-weight: 900;
+  font-size: x-large;
   border-color: black;
   text-shadow: -1px 0 rgb(255, 255, 255), 0 1px rgb(255, 255, 255), 1px 0 rgb(255, 255, 255), 0 -1px rgb(255, 255, 255);
 }
@@ -112,8 +114,10 @@ ul {
 }
 
 .barb {
-  margin-bottom: 7em;
-  width: 35rem;
+  margin-bottom: 2em;
+  width: 50rem;
+  height: 100%;
+
 }
 .food {
   display: flex;
@@ -128,6 +132,9 @@ ul {
 .cuisine-type {
   margin: 0.2rem;
   padding-top: 10rem;
+  color: black;
+  font-size: xx-large;
+  text-decoration: underline;
 }
 .address {
   color: black;
@@ -143,17 +150,24 @@ ul {
 
 .window {
   background-color: rgb(19, 18, 17);
-  /* display: inline; */
-}
-
-.horses {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
+  width: 25%;
+  margin: auto;
+  margin-bottom: 7rem;
+  margin-top: 3rem;
+  border-radius: 0.5rem;
 }
 
 .contact {
-  display: inline-block;
-  padding: 2.5rem;
+  /* display: inline-block;
+  padding: 2.5rem; */
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  padding: 0;
+  background-color: #252525;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 50vh;
 
 
 }
@@ -175,6 +189,7 @@ ul {
 .imageBorder {
   width: 35rem;
   height: 35rem;
+  margin-bottom: 2rem;
 }
 .homeBody {
   background-image: url("./image/arch.jpg");
@@ -184,6 +199,41 @@ ul {
   background-position: center;
   margin-top: 6rem;
 
+}
+.homePictures {
+  display: flex;
+  flex-direction: row;
+}
+
+.ravs {
+  display: inline-block;
+  flex-direction: row;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.imo {
+  font-size: x-large;
+  text-shadow: 0.1rem 0.1rem gray;
+  color: rgb(0, 0, 0);
+}
+.pmargin {
+  margin-top: 1rem;
+}
+.places {
+  /* font-size: x-large; */
+  margin: 0.2rem;
+  padding-top: 10rem;
+  color: black;
+  font-size: xx-large;
+  text-decoration: underline;
+}
+.penquins {
+  margin-bottom: 2rem;
+}
+
+#attractions {
+  margin-bottom: 14rem;
 }
 
 @media screen and (min-width: 359px) { /*may need to be min-width */

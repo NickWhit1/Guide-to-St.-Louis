@@ -5,7 +5,15 @@ import gardenImage from "../../image/botanicalGarden.jpg";
 
 export default () => html`
   <main id="attractions">
-    <h2>Busch Stadium</h2>
+    <h2 class="places">Busch Stadium</h2>
+    <div>
+      <a href="https://www.mlb.com/cardinals"
+        ><img
+          class="imageBorder"
+          src="${buschStadiumImage}"
+          alt="Picture of Busch Stadium"
+      /></a>
+    </div>
     <p>
       Busch Stadium is a baseball stadium located in St. Louis, Missouri. The
       stadium serves as the home of the St. Louis Cardinals, the city's Major
@@ -19,14 +27,6 @@ export default () => html`
       Series head-to-head against the damned Yankees (3-2). Join me as I count
       down the top teams the Cardinals have ever put on the field.
     </p>
-
-    <div>
-      <img
-        class="imageBorder"
-        src="${buschStadiumImage}"
-        alt="Picture of Busch Stadium"
-      />
-    </div>
     <a
       class="address"
       href="https://www.mapquest.com/directions"
@@ -34,7 +34,12 @@ export default () => html`
       >700 Clark Ave, St. Louis, MO 63102</a
     >
     <hr />
-    <h2>St. Louis Zoo</h2>
+    <h2 class="places">St. Louis Zoo</h2>
+    <div>
+      <a href="https://stlzoo.org"
+        ><img class="penquins" src="${zooImage}" alt="Zoo"
+      /></a>
+    </div>
     <p>
       Since its inception in 1910, the Zoo has been renowned for its beautiful
       naturalistic exhibits and for its diverse collection of animals from the
@@ -45,10 +50,6 @@ export default () => html`
       widely recognized for its innovative approaches to animal care and
       management, wildlife conservation, research and education.
     </p>
-
-    <div>
-      <img class="penquins" src="${zooImage}" alt="Zoo" />
-    </div>
     <a
       class="address"
       href="https://www.mapquest.com/directions"
@@ -57,7 +58,15 @@ export default () => html`
     >
     <hr />
     <div>
-      <h2>Botanical Gardens</h2>
+      <h2 class="places">Botanical Gardens</h2>
+      <div>
+        <a href="http://www.missouribotanicalgarden.org/"
+          ><img
+            class="imageBorder"
+            src="${gardenImage}"
+            alt="Picture of Busch Stadium"
+        /></a>
+      </div>
       <p>
         The Garden is a center for botanical research and science education, as
         well as an oasis in the city of St. Louis. The Garden offers 79 acres of
@@ -65,11 +74,7 @@ export default () => html`
         garden, historic architecture, and one of the world's largest
         collections of rare and endangered flora.
       </p>
-      <img
-        class="imageBorder"
-        src="${gardenImage}"
-        alt="Picture of Busch Stadium"
-      />
+
       <a
         class="address"
         href="https://www.mapquest.com/directions"
