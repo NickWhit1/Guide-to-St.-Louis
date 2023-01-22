@@ -2,6 +2,7 @@ import html from "html-literal";
 import pizza from "../../image/imosPizza.png";
 import italian from "../../image/pasta.jpg";
 import steak from "../../image/pappys.webp";
+import cake from "../../image/gooeyButterCake.jpg";
 
 export default () => html`
   <section id="cuisines">
@@ -25,7 +26,7 @@ export default () => html`
       </p>
     <div>
         <h2 class="imo" >Imos</h2>
-        <a class="imos" href="https://www.imospizza.com/"><img class="pizzaPic" src="${pizza}" alt="pizza"/></a>
+        <a class="imos" href="https://www.imospizza.com/" target="_blank" ><img class="pizzaPic" src="${pizza}" alt="pizza"/></a>
       <p class="foodPics" >"The local institution has stayed in the game for years by following the same basic formula: perfectly distributed, properly sized premium toppings on top of a rolled-thin crust."</p>
       </div>
     </div>
@@ -40,9 +41,15 @@ export default () => html`
       </div>
         <h2 class="imo" >Brio Italian Grill</h2>
 
-        <a href="https://locations.brioitalian.com/us/mo/st--louis/1601-south-lindbergh-blvd?utm_source=google&utm_campaign=lgmb&utm_medium=organic&utm_content=local-listing"><img class="italian" src="${italian}" alt="Italian" /></a>
+        <a href="https://locations.brioitalian.com/us/mo/st--louis/1601-south-lindbergh-blvd?utm_source=google&utm_campaign=lgmb&utm_medium=organic&utm_content=local-listing" target="_blank" ><img class="italian" src="${italian}" alt="Italian" /></a>
       </div>
       <p class="pmargin" >Brio Frontenac is a premier Tuscan-inspired restaurant destination serving authentic, northern Italian cuisine, luxury wines & cocktails—our specialties include premium quality steaks, chops, seafood, made-to-order pasta and flatbreads prepared in an authentic Italian wood-burning oven. Bringing the pleasures of the Tuscan country villa to St. Louis, our chef-inspired menu, chic atmosphere and world-class service will provide a dining experience like no other! We look forward to your visit at Frontenac located in St. Louis, MO – make your reservation or place an online order today!</p>
+      <a
+      class="address"
+      href="http://mapquest.com"
+      target="_blank"
+      >1601 S Lindbergh Blvd, St. Louis, MO 63131</a
+    >
       <hr>
       <h2 class="cuisine-type" >BBQ</h2>
         <p class="foodPics" >
@@ -52,8 +59,16 @@ export default () => html`
         </p>
         <h2 class="imo">Pappy's Smokehouse</h2></h2>
 
-          <a href="https://www.pappyssmokehouse.com/"><img class="barb" src="${steak}" alt="ribs" /></a>
+          <a href="https://www.pappyssmokehouse.com/" target="_blank" ><img class="barb" src="${steak}" alt="ribs" /></a>
       <p class="pmargin" >Pappy kept things simple. He loved the outdoors and he worked hard. When people came to visit, he tried always to provide an atmosphere for great food and good times. A perfect description of Pappy's Smokehouse today.</p>
+    </div>
+    <hr>
+    <div>
+      <h2 class="cuisine-type" >The Missouri Baking Company</h2>
+      <p>
+      Gooey butter cake is a type of cake traditionally made in St. Louis, Missouri. It is a flat and dense cake made with wheat cake flour, butter, sugar, and eggs, typically near an inch tall, and dusted with powdered sugar.
+      </p>
+    <img src="${cake}" alt="gooey butter cake pic" />
     </div>
   </section>
 `;

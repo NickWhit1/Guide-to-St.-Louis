@@ -33,14 +33,6 @@ function afterRender(state) {
       const Contact = event.target.elements;
       console.log("Contact", Contact);
 
-      // const message = {};
-      // for (let input of inputList.message) {
-      //   // If the value of the checked attribute is true then add the value to the array
-      //   if (input.checked) {
-      //     message.push(input.value);
-      //   }
-      // }
-
       const requestData = {
         email: Contact.email.value,
         message: Contact.message.value

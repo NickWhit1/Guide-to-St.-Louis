@@ -7,7 +7,7 @@ export default () => html`
   <main id="attractions">
     <h2 class="places">Busch Stadium</h2>
     <div>
-      <a href="https://www.mlb.com/cardinals"
+      <a href="https://www.mlb.com/cardinals" target="_blank"
         ><img
           class="imageBorder"
           src="${buschStadiumImage}"
@@ -36,7 +36,7 @@ export default () => html`
     <hr />
     <h2 class="places">St. Louis Zoo</h2>
     <div>
-      <a href="https://stlzoo.org"
+      <a href="https://stlzoo.org" target="_blank"
         ><img class="penquins" src="${zooImage}" alt="Zoo"
       /></a>
     </div>
@@ -60,7 +60,7 @@ export default () => html`
     <div>
       <h2 class="places">Botanical Gardens</h2>
       <div>
-        <a href="http://www.missouribotanicalgarden.org/"
+        <a href="http://www.missouribotanicalgarden.org/" target="_blank"
           ><img
             class="imageBorder"
             src="${gardenImage}"
