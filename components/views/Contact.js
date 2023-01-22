@@ -15,7 +15,7 @@ export default state => html`
         Your message:
         <textarea name="message" rows="6" maxlength="3000"></textarea>
       </label class="info" >
-      <input type="submit" name="submit" value="submit"/>
+      <input class="submit" type="submit" name="submit" value="submit"/>
 
       </form>
   </section>

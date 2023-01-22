@@ -9,6 +9,7 @@ export default state => html`
       <label for="site-search">Search</label>
       <input type="search" id="site-search" class="search-bar" />
     </div>
+    <div>
     <p class="aboutStl">
       St. Louis is a major city in Missouri along the Mississippi River. Its
       iconic, 630-ft. Gateway Arch, built in the 1960s, honors the early
@@ -17,6 +18,7 @@ export default state => html`
       of the arch. The Soulard district is home to barbecue restaurants and
       clubs playing blues music. The town gained fame in 1803 as the jumping-off point for the Louisiana Purchase Expedition of Meriwether Lewis and William Clark. After 1804, more New Englanders and other East Coast emigrants settled in St. Louis, but the population remained predominantly French until well into the 19th-Century.
     </p>
+    </div>
     <div class="homePics">
     <img class="arch" src="${stlArch}" alt="St. Louis Arch" />
     </div>
@@ -40,7 +42,7 @@ export default state => html`
     </div>
 
     </body>
-    <div id="openweathermap-widget-11">
+    <!-- <div id="openweathermap-widget-11"> -->
       <ul>
       </ul>
     </div>
