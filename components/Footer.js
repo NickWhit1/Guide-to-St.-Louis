@@ -1,7 +1,7 @@
 import html from "html-literal";
 
 export default () => html`
-  <footer>
+  <footer class="footer">
     <a href="Contact" target="">Contact</a>
     <a id="about" href="about" target="_blank">About</a>
     <a class="top" href="#">Jump to top</a>
