@@ -28,12 +28,12 @@ header {
 }
 
 nav a {
-  color: #000000; /* Default link color */
+  color: #fcfcfc; /* Default link color */
   text-decoration: none;
 }
 
 nav a:visited {
-  color: #e4e1e1; /* Visited link color */
+  color: #9e9e9e; /* Visited link color */
 }
 
 nav a:hover {
@@ -274,7 +274,7 @@ footer a {
 }
 
 footer a:visited {
-  color: #e4e1e1; /* Visited link color */
+  color: #000000; /* Visited link color */
 }
 
 footer a:hover {
