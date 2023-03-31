@@ -278,7 +278,7 @@ footer a:visited {
 }
 
 footer a:hover {
-  color: #190152; /* Hover link color */
+  color: #300596; /* Hover link color */
   text-decoration: underline;
 }
 
@@ -286,7 +286,7 @@ footer a:active {
   color: #615f5f; /* Active link color */
 }
 
-@media screen and (min-width: 359px) {
+@media screen and (min-width: 358px) {
   body {
     display: inline-block;
     flex-direction: column;
